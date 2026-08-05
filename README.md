@@ -50,7 +50,7 @@ Whether you are a beginner or an experienced developer, contributions are welcom
 
 ## 📂 Project Structure
 
-```text
+text
 react-open-source/
 │
 ├── public/
@@ -70,7 +70,7 @@ react-open-source/
 ├── LICENSE
 ├── README.md
 └── package.json
-```
+
 
 ---
 
@@ -82,27 +82,26 @@ Click the **Fork** button at the top-right of this repository.
 
 ### 2. Clone Your Fork
 
-```bash
+bash
 git clone https://github.com/YOUR-USERNAME/react-open-source.git
-```
 
 ### 3. Move Into The Project
 
-```bash
+bash
 cd react-open-source
-```
+
 
 ### 4. Install Dependencies
 
-```bash
+bash
 npm install
-```
+
 
 ### 5. Start Development Server
 
-```bash
+bash
 npm run dev
-```
+
 
 Open the local development URL shown in your terminal.
 
@@ -114,7 +113,7 @@ We welcome contributions from developers of all experience levels.
 
 ### Contribution Workflow
 
-```text
+text
 Fork
   ↓
 Clone
@@ -130,11 +129,11 @@ Commit
 Push
   ↓
 Create Pull Request
-```
+
 
 Before contributing, please read:
 
-👉 `CONTRIBUTING.md`
+👉 CONTRIBUTING.md
 
 ---
 
@@ -144,11 +143,11 @@ If you find a bug or have an idea for improving the project, please create an is
 
 You can also look for issues labeled:
 
-* `good first issue`
-* `help wanted`
-* `bug`
-* `enhancement`
-* `documentation`
+* good first issue
+* help wanted
+* bug
+* enhancement
+* documentation
 
 Beginners are especially encouraged to start with **good first issue** tasks.
 
