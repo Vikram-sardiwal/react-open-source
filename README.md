@@ -44,6 +44,39 @@ git push origin feature/my-feature
 ## 📋 Good First Issues
 New contributors can start with issues labeled good first issue. These issues are suitable for beginners who are making their first open source contribution.
 
+## 📁 Project Structure
+
+```text
+react-open-source/
+├── .github/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── README.md
+├── package.json
+└── vite.config.js
+
+Features section -:
+
+README me:
+
+```md
+## ✨ Features
+
+- Beginner-friendly React project
+- Reusable React components
+- Easy local setup
+- Beginner-friendly GitHub Issues
+- Good First Issues for new contributors
+- Open source contribution workflow
+- Responsive UI
+
+
+
 
 ## 📄 License
 This project is licensed under the MIT License.
