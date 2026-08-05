@@ -9,8 +9,8 @@ A beginner-friendly React project where anyone can contribute. Add a new compone
 ## 📦 Local Setup
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Vikram-sardiwal/react-open-source.git
+cd react-open-source
 npm install
 npm run dev
 ```
