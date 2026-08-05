@@ -36,7 +36,7 @@ Make your changes.
 git add .
 git commit -m "feat: add my feature"
 
-5Push your branch to your fork:
+5.Push your branch to your fork:
 
 git push origin feature/my-feature
 6.Open a Pull Request to this repository.
