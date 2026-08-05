@@ -1,6 +1,6 @@
 # React Open Source Starter 🚀
 
-Ek beginner-friendly React project jise koi bhi contribute kar sakta hai. Naya component add karo, bug fix karo, UI improve karo, ya documentation likho — sab welcome hai!
+A beginner-friendly React project where anyone can contribute. Add a new component, fix a bug, improve the UI, update the documentation, or suggest a new feature — all contributions are welcome!
 
 ## 🛠 Tech Stack
 - React 18
@@ -15,23 +15,43 @@ npm install
 npm run dev
 ```
 
-App `http://localhost:5173` par khul jayega.
+The app will be available at:
+
+http://localhost:5173
 
 ## 🤝 Contributing
 
-Contribute karne se pehle [CONTRIBUTING.md](./CONTRIBUTING.md) zaroor padhein.
+Before contributing, please read the CONTRIBUTING.md file.
 
 Quick steps:
-1. Repo ko **fork** karo
-2. Naya branch banao: `git checkout -b feature/my-feature`
-3. Apna change karo aur commit karo
-4. Apne fork par push karo
-5. **Pull Request** kholo
+1.Fork the repository.
+
+2.Create a new branch:
+
+3.git checkout -b feature/my-feature
+Make your changes.
+
+4.Commit your changes:
+
+git add .
+git commit -m "feat: add my feature"
+
+5Push your branch to your fork:
+
+git push origin feature/my-feature
+6.Open a Pull Request to this repository.
 
 ## 📋 Good First Issues
+New contributors can start with issues labeled good first issue. These issues are suitable for beginners who are making their first open source contribution.
 
-Naye contributors `good first issue` label wale issues se shuru kar sakte hain.
 
 ## 📄 License
+This project is licensed under the MIT License.
 
-Ye project [MIT License](./LICENSE) ke under hai.
+---
+👨‍💻 Project Maintainer
+
+Vikram Sardiwal
+
+Contributions, suggestions, and improvements are always welcome! 🚀
+
