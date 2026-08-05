@@ -1,20 +1,34 @@
-## Kya Change Kiya
+## 📋 Description
 
-<!-- Apne change ka short description likhein -->
+<!-- Explain what you changed. -->
 
-## Related Issue
+## 🔗 Related Issue
+
+<!-- Example: Closes #12 -->
 
 Closes #
 
-## Type of Change
+## ✨ Changes Made
 
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Documentation update
-- [ ] UI/Styling change
+*
+*
+*
 
-## Checklist
+## 📸 Screenshots
 
-- [ ] `npm run lint` chala kar check kiya
-- [ ] Code test kiya local machine par
-- [ ] README/docs update kiye (agar zaroori ho)
+<!-- Add screenshots for UI changes. -->
+
+## 🧪 Testing
+
+* [ ] I tested my changes locally
+* [ ] No console errors
+* [ ] Existing functionality still works
+* [ ] Responsive design checked
+
+## ✅ Checklist
+
+* [ ] I followed the project guidelines
+* [ ] I created a separate branch
+* [ ] I used a clear commit message
+* [ ] I reviewed my changes
+* [ ] I linked the related issue
