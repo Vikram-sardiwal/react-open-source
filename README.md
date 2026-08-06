@@ -219,9 +219,9 @@ Built with ❤️ using React.
 
 Thanks to these wonderful people for contributing to this project! 💖
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/Vikram-sardiwal/react-open-source/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=Vikram-sardiwal/react-open-source" width="180" alt="Project Contributors" />
+    <img src="https://contrib.rocks/image?repo=Vikram-sardiwal/react-open-source" width="120" alt="Project Contributors" />
   </a>
 </p>
 
