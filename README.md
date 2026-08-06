@@ -217,13 +217,15 @@ Built with ❤️ using React.
 
 ## 🤝 Contributors
 
-Thanks to everyone who has contributed to this project!
+Thanks to these wonderful people for contributing to this project! 💖
 
-<a href="https://github.com/Vikram-sardiwal/react-open-source/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Vikram-sardiwal/react-open-source" alt="Contributors" />
-</a>
+<p align="center">
+  <a href="https://github.com/Vikram-sardiwal/react-open-source/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=Vikram-sardiwal/react-open-source" width="180" alt="Project Contributors" />
+  </a>
+</p>
 
-Want to contribute? Check out the open issues and submit your first Pull Request!
+Want to contribute? Check out the [open issues](https://github.com/Vikram-sardiwal/react-open-source/issues) and submit your first Pull Request!
 
 ---
 
