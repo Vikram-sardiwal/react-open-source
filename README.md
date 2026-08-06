@@ -215,4 +215,18 @@ Every contribution helps make the project better and provides a valuable learnin
 
 Built with ❤️ using React.
 
+## 🤝 Contributors
+
+Thanks to these wonderful people for contributing to this project! 💖
+
+<p align="left">
+  <a href="https://github.com/Vikram-sardiwal/react-open-source/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=Vikram-sardiwal/react-open-source" width="120" alt="Project Contributors" />
+  </a>
+</p>
+
+Want to contribute? Check out the [open issues](https://github.com/Vikram-sardiwal/react-open-source/issues) and submit your first Pull Request!
+
+---
+
 **Happy Coding! 🚀**
