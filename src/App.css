@@ -20,3 +20,58 @@
   padding: 0.1rem 0.4rem;
   border-radius: 4px;
 }
+
+.dark-toggle {
+  padding: 3px;
+  width: fit-content;
+  position: relative;
+  background: #222;
+  border-radius: 30px;
+}
+
+.toggle-checkbox {
+   opacity: 0;
+   position: absolute;
+}
+
+.switch {
+   margin: 0;
+   width: 50px;
+   background: #222;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 30px;
+   position: relative;
+   gap: 0;
+}
+
+.switcher {
+   background: #fff;
+   position: absolute;
+   left: 0;
+   height: 23px;
+   width: 23px;
+   border-radius: 50%;
+   transition: 0.3s ease-out;
+}
+
+.icon {
+   display: flex;
+}
+
+.toggle-checkbox:checked + .switch .switcher {
+   transform: translateX(calc(50px - 23px));
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  .welcome p {
+    color: #ddd;
+  }
+
+  .welcome code {
+    background: #262626;
+  }
+}

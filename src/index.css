@@ -11,4 +11,14 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: #213547;
+  transition: background 0.3s ease-in, color 0.3s ease-in;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  body {
+    background: #000;
+    color: #7DA2C3;
+  }
 }
