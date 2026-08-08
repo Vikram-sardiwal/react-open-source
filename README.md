@@ -2,6 +2,16 @@
 
 A beginner-friendly React open-source project where developers can practice React, contribute components, improve UI, fix bugs, and gain practical experience with real-world open-source collaboration.
 
+![GitHub stars](https://img.shields.io/github/stars/Vikram-sardiwal/react-open-source?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Vikram-sardiwal/react-open-source?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/Vikram-sardiwal/react-open-source?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Vikram-sardiwal/react-open-source?style=for-the-badge)
+![License](https://img.shields.io/github/license/Vikram-sardiwal/react-open-source?style=for-the-badge)
+
+A beginner-friendly **React Open Source** project built with **React, Vite, Tailwind CSS, and JavaScript**.
+
+⭐ Star this repository if you find it useful.
+
 ## 🌟 About the Project
 
 **React Open Source** is designed for developers who are learning React and want to make their first contributions to an open-source project.
