@@ -21,6 +21,7 @@
   border-radius: 4px;
 }
 
+/* Dark Mode Toggle */
 .dark-toggle {
   padding: 3px;
   width: fit-content;
@@ -30,48 +31,100 @@
 }
 
 .toggle-checkbox {
-   opacity: 0;
-   position: absolute;
+  opacity: 0;
+  position: absolute;
 }
 
 .switch {
-   margin: 0;
-   width: 50px;
-   background: #222;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   border-radius: 30px;
-   position: relative;
-   gap: 0;
+  margin: 0;
+  width: 50px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  position: relative;
+  gap: 0;
 }
 
 .switcher {
-   background: #fff;
-   position: absolute;
-   left: 0;
-   height: 23px;
-   width: 23px;
-   border-radius: 50%;
-   transition: 0.3s ease-out;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
 }
 
 .icon {
-   display: flex;
+  display: flex;
 }
 
 .toggle-checkbox:checked + .switch .switcher {
-   transform: translateX(calc(50px - 23px));
+  transform: translateX(calc(50px - 23px));
 }
 
 html[data-theme="dark"] {
   color-scheme: dark;
+}
 
-  .welcome p {
-    color: #ddd;
-  }
+html[data-theme="dark"] .welcome p {
+  color: #ddd;
+}
 
-  .welcome code {
-    background: #262626;
-  }
+/* Error Page */
+.error-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.error-container img {
+  margin: auto;
+  height: auto;
+  width: 30vw;
+}
+
+.error-text {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-heading {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #8e8dd3;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.error-sub {
+  color: black;
+  font-weight: bold;
+}
+
+.home-button {
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 500ms ease 0s;
+}
+
+.home-button:hover {
+  color: grey;
+  opacity: 0.8;
 }
