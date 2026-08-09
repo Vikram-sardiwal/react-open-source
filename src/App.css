@@ -1,130 +1,14 @@
-.app {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-  text-align: center;
+:root {
+  --bg-color: white;
+  --text-color: black;
 }
 
-.welcome h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: white;
 }
 
-.welcome p {
-  line-height: 1.6;
-  color: #444;
-}
-
-.welcome code {
-  background: #f3f3f3;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
-}
-
-/* Dark Mode Toggle */
-.dark-toggle {
-  padding: 3px;
-  width: fit-content;
-  position: relative;
-  background: #222;
-  border-radius: 30px;
-}
-
-.toggle-checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.switch {
-  margin: 0;
-  width: 50px;
-  background: #222;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 30px;
-  position: relative;
-  gap: 0;
-}
-
-.switcher {
-  background: #fff;
-  position: absolute;
-  left: 0;
-  height: 23px;
-  width: 23px;
-  border-radius: 50%;
-  transition: 0.3s ease-out;
-}
-
-.icon {
-  display: flex;
-}
-
-.toggle-checkbox:checked + .switch .switcher {
-  transform: translateX(calc(50px - 23px));
-}
-
-html[data-theme="dark"] {
-  color-scheme: dark;
-}
-
-html[data-theme="dark"] .welcome p {
-  color: #ddd;
-}
-
-/* Error Page */
-.error-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 40px auto;
-}
-
-.error-container img {
-  margin: auto;
-  height: auto;
-  width: 30vw;
-}
-
-.error-text {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
-}
-
-.error-heading {
-  font-size: 35px;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: #8e8dd3;
-  font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.error-sub {
-  color: black;
-  font-weight: bold;
-}
-
-.home-button {
-  margin-top: 10px;
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 500ms ease 0s;
-}
-
-.home-button:hover {
-  color: grey;
-  opacity: 0.8;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
