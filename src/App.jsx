@@ -1,21 +1,22 @@
 import Welcome from "./components/Welcome.jsx";
-import DarkMode from "./components/Dark-Mode.jsx";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
     <>
-      <DarkMode />
-
-      <Routes>
+    <Routes>
         <Route
           path="/"
           element={
+            <>
             <div className="app">
               <Welcome />
             </div>
+            <Footer />
+            </>
           }
         />
 
