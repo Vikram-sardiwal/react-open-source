@@ -128,3 +128,8 @@ html[data-theme="dark"] .welcome p {
   color: grey;
   opacity: 0.8;
 }
+
+.toggle-checkbox:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
