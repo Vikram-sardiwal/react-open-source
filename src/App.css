@@ -130,6 +130,11 @@ html[data-theme="dark"] .welcome p {
   opacity: 0.8;
 }
 
+.toggle-checkbox:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
 /* Footer */
 
 .footer {
@@ -183,10 +188,4 @@ html[data-theme="dark"] .welcome p {
   .footer-links {
     gap: 1rem;
   }
-}
-
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }

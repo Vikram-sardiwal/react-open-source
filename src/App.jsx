@@ -7,15 +7,15 @@ import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <>
-    <Routes>
+      <Routes>
         <Route
           path="/"
           element={
             <>
-            <div className="app">
-              <Welcome />
-            </div>
-            <Footer />
+              <div className="app">
+                <Welcome />
+              </div>
+              <Footer />
             </>
           }
         />
