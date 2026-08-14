@@ -108,8 +108,6 @@ cd react-open-source
 npm install
 ```
 
-### 5. Start the Development Server
-
 ### 5. Start Development Server
 
 ```bash
