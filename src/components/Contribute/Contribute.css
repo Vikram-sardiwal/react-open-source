@@ -1,0 +1,71 @@
+.contribute {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px; 
+  margin: 30px ;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  border-radius: 10px;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Header Text Styling */
+.contribute h2 {
+  font-size: 25px;
+  margin: 5px;
+  font-weight: 600;
+  color: #14010a;
+}
+
+.contribute p {
+  margin: 10px 3px;
+  opacity: 0.9;
+}
+
+/* Card Grid  */
+.contribute-steps {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Card Styling */
+.step {
+  padding: 10px;
+  background: #517ec8;
+  /* border: 1px solid rgba(255, 255, 255, 0.25); */
+  border-radius: 14px;
+  /* backdrop-filter: blur(10px); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.step p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+
+}
+.gitcommand{
+      /* border: 1px solid ; */
+  background-color: black;
+  color:white;
+  padding: 10px 30px;
+  border-radius: 20px;
+}

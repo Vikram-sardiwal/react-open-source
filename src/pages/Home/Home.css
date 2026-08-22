@@ -1,0 +1,9 @@
+.home{
+    background: rgb(245, 234, 234);
+    padding: 50px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:20px;
+}
