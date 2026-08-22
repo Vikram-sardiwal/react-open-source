@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
+import reactLogo from '../assets/physics.png';
 
 function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-content">
         <NavLink to="/" className="navbar-brand">
-          <span className="navbar-dot" />
+          <img src={reactLogo}/>
           React Open Source
         </NavLink>
 

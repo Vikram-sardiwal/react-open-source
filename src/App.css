@@ -1,26 +1,14 @@
 .app {
-  max-width: 640px;
+  /* max-width: 640px; */
   margin: 0 auto;
   padding: 3rem 1.5rem;
   text-align: center;
   flex: 1;
+  background:linear-gradient(270deg,pink,rgb(192, 97, 113));
+
 }
 
-.welcome h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
 
-.welcome p {
-  line-height: 1.6;
-  color: #444;
-}
-
-.welcome code {
-  background: #f3f3f3;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
-}
 
 /* Dark Mode Toggle */
 .dark-toggle {
@@ -191,6 +179,11 @@ html[data-theme="dark"] .welcome p {
   text-decoration: none;
 }
 
+
+.navbar-brand img{
+  width: 20px;
+  height: 20px;
+}
 .navbar-dot {
   width: 8px;
   height: 8px;

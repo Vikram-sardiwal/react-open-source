@@ -1,7 +1,13 @@
+import './Welcome.css'
+import openSource from '../../assets/openSource.png';
+
+
+
 function Welcome() {
   return (
   <section className="welcome">
-    <h1>Welcome to React Open Source Starter</h1>
+    <p className='welcome-badge'><img src={openSource}/>Open Source Project - Made for Beginners</p>
+    <h1>Welcome to <span className='welcome-title'>React Open Source Starter</span></h1>
 
     <p>
       This project is specially created to help new contributors make

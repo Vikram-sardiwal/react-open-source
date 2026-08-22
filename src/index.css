@@ -5,12 +5,14 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0;
-  background-color: #ffffff;
-  color: #213547;
+  
+  background-color: #0f172a;
+  color: #c084fc;
   transition: background 0.3s ease-in, color 0.3s ease-in;
 }
 
