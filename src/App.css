@@ -22,6 +22,59 @@
   border-radius: 4px;
 }
 
+.community-highlight,
+.api-error {
+  margin-top: 2rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  overflow-wrap: break-word;
+}
+
+.community-highlight h2,
+.api-error h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.api-error p,
+.community-highlight p {
+  margin: 0;
+}
+
+.retry-button {
+  margin-top: 1rem;
+  padding: 0.65rem 1.25rem;
+  border: 2px solid #8e8dd3;
+  border-radius: 6px;
+  background: #8e8dd3;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  opacity: 0.85;
+}
+
+.retry-button:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .community-highlight,
+  .api-error {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .retry-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 /* Dark Mode Toggle */
 .dark-toggle {
   padding: 3px;
@@ -72,6 +125,11 @@ html[data-theme="dark"] {
 
 html[data-theme="dark"] .welcome p {
   color: #ddd;
+}
+
+html[data-theme="dark"] .community-highlight,
+html[data-theme="dark"] .api-error {
+  border-color: #222;
 }
 
 /* Error Page */
