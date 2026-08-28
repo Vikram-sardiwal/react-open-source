@@ -13,6 +13,9 @@ function Navbar() {
           <NavLink to="/" end className="navbar-link">
             Home
           </NavLink>
+          <NavLink to="/products" className="navbar-link">
+            Products
+          </NavLink>
           <a
             href="https://github.com/Vikram-sardiwal/react-open-source"
             className="navbar-link"
