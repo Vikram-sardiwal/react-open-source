@@ -24,6 +24,12 @@ function Welcome() {
           actionLink="https://github.com/Vikram-sardiwal/react-open-source"
         />
         <Card
+          title="Merch & Wishlist"
+          description="Browse developer merch and save your favorite gear with the wishlist feature."
+          actionText="Browse Products"
+          actionLink="/products"
+        />
+        <Card
           title="Contribute"
           description="Learn how to create pull requests, follow guidelines, and collaborate."
           actionText="Read Guidelines"
