@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import LoadingSpinner from "./LoadingSpinner.jsx";
+import Loading from "./Loading.jsx";
 
 const PRODUCTS_API_URL = "https://dummyjson.com/products";
 
