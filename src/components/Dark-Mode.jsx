@@ -1,31 +1,24 @@
+import { useEffect, useState } from "react";
+
 function DarkMode() {
-  const rootEl = document.documentElement;
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
 
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    rootEl.setAttribute("data-theme", savedTheme);
-  }
+    if (savedTheme) {
+      return savedTheme;
+    }
 
-  function printToggle() {
-    const currentTheme =
-      rootEl.getAttribute("data-theme") ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light");
-
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-
-    rootEl.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-  }
-
-  const currentTheme =
-    rootEl.getAttribute("data-theme") ||
-    (window.matchMedia("(prefers-color-scheme: dark)").matches
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
-      : "light");
+      : "light";
+  });
 
-  const isDark = currentTheme === "dark";
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const isDark = theme === "dark";
 
   return (
     <div
@@ -39,7 +32,7 @@ function DarkMode() {
         id="toggle"
         name="toggle"
         checked={isDark}
-        onChange={printToggle}
+        onChange={() => setTheme((currentTheme) => currentTheme === "dark" ? "light" : "dark")}
         aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       />
 

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import DarkMode from "./Dark-Mode.jsx";
 
 function Navbar() {
   return (
@@ -30,6 +31,8 @@ function Navbar() {
             Contributing
           </a>
         </nav>
+
+        <DarkMode />
       </div>
     </header>
   );
