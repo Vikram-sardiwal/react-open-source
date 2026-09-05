@@ -1,16 +1,39 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="navbar">
       <div className="navbar-content">
-        <NavLink to="/" className="navbar-brand">
+        <NavLink to="/" className="navbar-brand" onClick={closeMenu}>
           <span className="navbar-dot" />
           React Open Source
         </NavLink>
 
-        <nav className="navbar-links">
-          <NavLink to="/" end className="navbar-link">
+        <button
+          type="button"
+          className={`navbar-toggle ${isMenuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
+          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+        >
+          <span className="hamburger-line" />
+          <span className="hamburger-line" />
+          <span className="hamburger-line" />
+        </button>
+
+        <nav className={`navbar-links ${isMenuOpen ? "is-active" : ""}`}>
+          <NavLink to="/" end className="navbar-link" onClick={closeMenu}>
             Home
           </NavLink>
           <a
@@ -18,6 +41,7 @@ function Navbar() {
             className="navbar-link"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={closeMenu}
           >
             GitHub
           </a>
@@ -26,6 +50,7 @@ function Navbar() {
             className="navbar-link"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={closeMenu}
           >
             Contributing
           </a>
