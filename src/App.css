@@ -23,55 +23,68 @@
 }
 
 /* Dark Mode Toggle */
-.dark-toggle {
-  padding: 3px;
-  width: fit-content;
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
   position: relative;
-  background: #222;
-  border-radius: 30px;
 }
 
 .toggle-checkbox {
   opacity: 0;
   position: absolute;
+  width: 0;
+  height: 0;
 }
 
 .switch {
   margin: 0;
   width: 50px;
-  background: #222;
+  height: 27px;
+  background: #333;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 30px;
   position: relative;
-  gap: 0;
+  padding: 0 5px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .switcher {
   background: #fff;
   position: absolute;
-  left: 0;
+  left: 2px;
   height: 23px;
   width: 23px;
   border-radius: 50%;
-  transition: 0.3s ease-out;
+  transition: transform 0.3s ease-out;
 }
 
 .icon {
   display: flex;
+  font-size: 13px;
 }
 
 .toggle-checkbox:checked + .switch .switcher {
-  transform: translateX(calc(50px - 23px));
+  transform: translateX(23px);
 }
 
 html[data-theme="dark"] {
   color-scheme: dark;
 }
 
+html[data-theme="dark"] .welcome h1 {
+  color: #f4f4f5;
+}
+
 html[data-theme="dark"] .welcome p {
-  color: #ddd;
+  color: #a1a1aa;
+}
+
+html[data-theme="dark"] .welcome code {
+  background: #27272a;
+  color: #f4f4f5;
 }
 
 /* Error Page */
@@ -199,6 +212,12 @@ html[data-theme="dark"] .welcome p {
   flex-shrink: 0;
 }
 
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .navbar-links {
   display: flex;
   gap: 1.75rem;
@@ -238,17 +257,21 @@ html[data-theme="dark"] .welcome p {
 }
 
 html[data-theme="dark"] .navbar {
-  background: rgba(0, 0, 0, 0.85);
-  border-bottom-color: #222;
+  background: rgba(18, 18, 18, 0.85);
+  border-bottom-color: #27272a;
 }
 
-html[data-theme="dark"] .navbar-brand,
-html[data-theme="dark"] .navbar-link.active {
-  color: #7da2c3;
+html[data-theme="dark"] .navbar-brand {
+  color: #f4f4f5;
 }
 
 html[data-theme="dark"] .navbar-link {
-  color: #9fb8cc;
+  color: #a1a1aa;
+}
+
+html[data-theme="dark"] .navbar-link:hover,
+html[data-theme="dark"] .navbar-link.active {
+  color: #f4f4f5;
 }
 
 @media (max-width: 600px) {
@@ -259,7 +282,12 @@ html[data-theme="dark"] .navbar-link {
   .navbar-content {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.6rem;
+    gap: 0.8rem;
+  }
+
+  .navbar-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .navbar-links {
@@ -309,6 +337,28 @@ html[data-theme="dark"] .navbar-link {
   margin: 0;
   font-size: 0.9rem;
   color: #666;
+}
+
+html[data-theme="dark"] .footer {
+  background: #18181b;
+  border-top-color: #27272a;
+}
+
+html[data-theme="dark"] .footer h3,
+html[data-theme="dark"] .footer-links a {
+  color: #f4f4f5;
+}
+
+html[data-theme="dark"] .footer p {
+  color: #a1a1aa;
+}
+
+html[data-theme="dark"] .error-sub {
+  color: #e4e4e7;
+}
+
+html[data-theme="dark"] .home-button {
+  color: #8e8dd3;
 }
 
 @media (max-width: 600px) {
