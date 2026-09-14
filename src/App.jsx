@@ -4,11 +4,13 @@ import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
   return (
     <>
-    <Navbar/>
+      <ScrollToTop />
+      <Navbar />
       <Routes>
         <Route
           path="/"
@@ -21,7 +23,6 @@ function App() {
             </>
           }
         />
-
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
