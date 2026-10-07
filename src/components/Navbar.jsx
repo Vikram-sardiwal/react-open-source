@@ -24,7 +24,22 @@ function Navbar() {
           >
             Home
           </NavLink>
-
+          <NavLink
+            to="/products"
+            className={({ isActive }) =>
+              isActive ? "navbar-link active" : "navbar-link"
+            }
+          >
+            Products
+          </NavLink>
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              isActive ? "navbar-link active" : "navbar-link"
+            }
+          >
+            Cart
+          </NavLink>
           <a
             href="https://github.com/Vikram-sardiwal/react-open-source/issues"
             className="navbar-link"
@@ -33,16 +48,6 @@ function Navbar() {
           >
             Issues
           </a>
-
-          <a
-            href="https://github.com/Vikram-sardiwal/react-open-source/blob/main/CONTRIBUTING.md"
-            className="navbar-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Contributing
-          </a>
-
           <a
             href="https://github.com/Vikram-sardiwal/react-open-source"
             className="navbar-link"
@@ -77,7 +82,24 @@ function Navbar() {
           >
             Home
           </NavLink>
-
+          <NavLink
+            to="/products"
+            className={({ isActive }) =>
+              isActive ? "mobile-link active" : "mobile-link"
+            }
+            onClick={closeMenu}
+          >
+            Products
+          </NavLink>
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              isActive ? "mobile-link active" : "mobile-link"
+            }
+            onClick={closeMenu}
+          >
+            Cart
+          </NavLink>
           <a
             href="https://github.com/Vikram-sardiwal/react-open-source/issues"
             className="mobile-link"
@@ -87,17 +109,6 @@ function Navbar() {
           >
             Issues
           </a>
-
-          <a
-            href="https://github.com/Vikram-sardiwal/react-open-source/blob/main/CONTRIBUTING.md"
-            className="mobile-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMenu}
-          >
-            Contributing
-          </a>
-
           <a
             href="https://github.com/Vikram-sardiwal/react-open-source"
             className="mobile-link"
