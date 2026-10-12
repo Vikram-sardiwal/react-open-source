@@ -7,7 +7,7 @@ function Navbar() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="navbar">
+    <header className="navbar relative z-50">
       <div className="navbar-content">
         <NavLink to="/" className="navbar-brand" onClick={closeMenu}>
           <span className="navbar-dot" />
@@ -66,7 +66,7 @@ function Navbar() {
       </div>
 
       {menuOpen && (
-        <nav className="navbar-mobile-menu">
+        <nav className="navbar-mobile-menu absolute left-0 top-full w-full bg-white z-50 shadow-md pb-4">
           <NavLink
             to="/"
             end
