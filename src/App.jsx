@@ -1,9 +1,10 @@
-import Welcome from "./components/Welcome.jsx";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
+import ProductDetails from "./components/ProductDetails.jsx";
+import ProductList from "./components/ProductList.jsx";
 
 function App() {
   return (
@@ -14,13 +15,12 @@ function App() {
           path="/"
           element={
             <>
-              <div className="app">
-                <Welcome />
-              </div>
+              <ProductList />
               <Footer />
             </>
           }
         />
+        <Route path="/products/:productId" element={<ProductDetails />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
