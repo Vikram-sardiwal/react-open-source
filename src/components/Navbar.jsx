@@ -25,6 +25,15 @@ function Navbar() {
             Home
           </NavLink>
 
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              isActive ? "navbar-link active" : "navbar-link"
+            }
+          >
+            Cart
+          </NavLink>
+
           <a
             href="https://github.com/Vikram-sardiwal/react-open-source/issues"
             className="navbar-link"
@@ -76,6 +85,16 @@ function Navbar() {
             onClick={closeMenu}
           >
             Home
+          </NavLink>
+
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              isActive ? "mobile-link active" : "mobile-link"
+            }
+            onClick={closeMenu}
+          >
+            Cart
           </NavLink>
 
           <a
