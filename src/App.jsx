@@ -1,6 +1,8 @@
+
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage.jsx";
+import EmptyCart from "./components/EmptyCart.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
 import ProductDetails from "./components/ProductDetails.jsx";
@@ -9,7 +11,7 @@ import ProductList from "./components/ProductList.jsx";
 function App() {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <Routes>
         <Route
           path="/"
@@ -20,8 +22,8 @@ function App() {
             </>
           }
         />
+        <Route path="/cart" element={<EmptyCart />} />
         <Route path="/products/:productId" element={<ProductDetails />} />
-
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
