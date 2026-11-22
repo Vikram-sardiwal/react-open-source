@@ -620,3 +620,44 @@ html[data-theme="dark"] .mobile-link {
     gap: 1rem;
   }
 }
+
+/* Button Hover & Focus Accessibility Improvements */
+
+button {
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease,
+              transform 0.2s ease;
+}
+
+/* Hover effect */
+button:not(:disabled):hover {
+  filter: brightness(0.92);
+}
+
+/* Keyboard focus */
+button:focus-visible {
+  outline: 3px solid #726fc1;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(114, 111, 193, 0.2);
+}
+
+/* Click effect */
+button:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+/* Disabled buttons */
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  filter: none;
+  transform: none;
+}
+
+/* Dark mode focus */
+html[data-theme="dark"] button:focus-visible {
+  outline-color: #a5a1f0;
+  box-shadow: 0 0 0 5px rgba(165, 161, 240, 0.2);
+}
